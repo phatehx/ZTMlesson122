@@ -14,6 +14,8 @@ buttontype = input('[+] What is the type of login button?: ')
 login_failed_string = input('[+] Enter failed login string from target: ')
 if input('[+] POST or GET form? ') == 'GET':
     cookie_value = input('[+] Enter a cookie value: ')
+else:
+    cookie_value = ''
 
 # Create a new function ('cracking'), which will processe authentication requests and parsing either 'success' or 'fail' responses.
 def cracking(username,url,login_failed_string):
